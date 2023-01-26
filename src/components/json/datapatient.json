@@ -1,0 +1,15 @@
+{
+    "roomNumber": 12,
+    "patientInfo": {
+        "id": 123,
+        "photo": "https://randomuser.me/api/portraits/men/56.jpg",
+        "name": "John Smith",
+        "age": 34,
+        "weight": 150,
+        "doctor": "Dr. Jane Doe",
+        "healthIssue": "Chest pain and shortness of breath",
+        "oxygenLevelLastUpdated": "2022-12-01T12:00:00",
+        "bloodPressureLastUpdated": "2022-12-01T15:00:00",
+        "temperatureLastUpdated": "2022-12-01T18:00:00"
+    }
+}

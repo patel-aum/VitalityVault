@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+import { BrowserRouter as Router, Routes, Route}  from 'react-router-dom';
+import Doctorpanel from './components/doctor_panel';
+import Sidebar from "./components/Sidebar";
+import PatientPanel from "./components/PatientPanel";
+import Monitoringpanel from "./components/Monitoringpanel";
+import Login from './components/Loginpage';
+import GeneratePatientData from './components/generatePatientData';
+// import NavBarUser from './components/navbar';
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <React.Fragment>
+    <h1>VitalityVault</h1>
+      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+      <Router>
+      <Routes>
+        <Route exact0 path='/' exact element={<Login/>} />
+        <Route exact1 path='/doctorpanel' exact element={<Doctorpanel />} />
+        <Route exact2 path='/patientpanel' exact element={<PatientPanel />} />
+        <Route exact3 path='/monitoringpanel' exact element={<Monitoringpanel />} />
+
+  {/* <Switch>
+     <Navbar isAuth={loggedIn} />
+     <Route exact0 path="/" exact component={<Login/>} />
+     <Route path="/" component={<Login/>} />
+     <PrivateRoute path="/dashboard" component={Dashboard} />
+  </Switch> */}
+
+
+    </Routes>
+    </Router>
+ </React.Fragment>
   );
 }
 
