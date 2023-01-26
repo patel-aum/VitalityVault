@@ -1,30 +1,23 @@
-import React, { useState } from 'react';
-import GeneratePatientData from './generatePatientData';
+import React from 'react';
+import "./PatientPanel.css";
 
-const PatientPanel = () => {
-    const [patientData, setPatientData] = useState(GeneratePatientData());
-
-    const handleRegenerate = () => {
-        setPatientData(GeneratePatientData());
-    }
-
+function PatientPanel(props) {
+    const { roomNumber, patientInfo } = props;
+    const { photo, name, age, weight, doctor, healthIssue, oxygenLevelLastUpdated, bloodPressureLastUpdated, temperatureLastUpdated } = patientInfo;
     return (
-        <div>
-            <h2>Room Number: {patientData.roomNumber}</h2>
-            <p>Patient ID: {patientData.patientInfo.id}</p>
-            <p>Patient Name: {patientData.patientInfo.name}</p>
-            <p>Patient Age: {patientData.patientInfo.age}</p>
-            <p>Patient Weight: {patientData.patientInfo.weight}</p>
-            <p>Patient Doctor: {patientData.patientInfo.doctor}</p>
-            <p>Patient Health Issue: {patientData.patientInfo.healthIssue}</p>
-<p>Patient Oxygen Level Last Updated: {patientData.patientInfo.oxygenLevelLastUpdated}</p>
-<p>Patient Blood Pressure Last Updated: {patientData.patientInfo.bloodPressureLastUpdated}</p>
-<p>Patient Temperature Last Updated: {patientData.patientInfo.temperatureLastUpdated}</p>
-<button onClick={handleRegenerate}>Regenerate Patient Data</button>
-</div>
-)
-}
-
-export default PatientPanel;
-
-
+      <div className="patient-panel">
+        <h1 className="patient-panel__title">Room {roomNumber} - {name}</h1>
+        <div className="patient-panel__info">
+          <img src={photo} alt={name} className="patient-panel__photo" />
+          <p className="patient-panel__text">Age: {age}</p>
+          <p className="patient-panel__text">Weight: {weight}</p>
+          <p className="patient-panel__text">Doctor: {doctor}</p>
+          <p className="patient-panel__text">Health Issue: {healthIssue}</p>
+          <p className="patient-panel__text">Oxygen Level Last Updated: {oxygenLevelLastUpdated}</p>
+          <p className="patient-panel__text">Blood Pressure Last Updated: {bloodPressureLastUpdated}</p>
+          <p className="patient-panel__text">Temperature Last Updated: {temperatureLastUpdated}</p>
+        </div>
+      </div>
+    );
+  }
+  export default PatientPanel;

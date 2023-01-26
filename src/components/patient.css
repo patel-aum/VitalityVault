@@ -1,0 +1,32 @@
+/* Set the overall background color to blue */
+body {
+    background-color: #0077C9;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the container that holds the patient's details */
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  /* Style the patient's photo */
+  img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  
+  /* Style the patient's details */
+  p {
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+  }
+  
