@@ -6,7 +6,6 @@ import Sidebar from "./components/Sidebar";
 import PatientPanel from "./components/PatientPanel";
 import Monitoringpanel from "./components/Monitoringpanel";
 import Login from './components/Loginpage';
-import GeneratePatientData from './components/generatePatientData';
 // import NavBarUser from './components/navbar';
 function App(){
   return (
