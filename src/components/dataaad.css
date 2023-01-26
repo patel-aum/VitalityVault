@@ -31,3 +31,7 @@ button[type="submit"] {
     cursor: pointer;
     
 }
+
+.video__embedded--video box-shadow-medium{
+    padding-left:2px;
+    }

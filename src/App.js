@@ -7,6 +7,7 @@ import PatientPanel from "./components/PatientPanel";
 import Monitoringpanel from "./components/Monitoringpanel";
 import Login from './components/Loginpage';
 import data from "./components/json/datapatient.json"
+import Grafena from './components/grafena';
 // import NavBarUser from './components/navbar';
 function App(){
   return (
@@ -18,7 +19,7 @@ function App(){
         <Route exact0 path='/' exact element={<Login/>} />
         <Route exact1 path='/doctorpanel' exact element={<Doctorpanel />} />
         <Route exact2 path='/patientpanel' exact element={<PatientPanel roomNumber={data.roomNumber}  patientInfo={data.patientInfo} />} />
-        <Route exact3 path='/monitoringpanel' exact element={<Monitoringpanel />} />
+        <Route exact3 path='/monitoringpanel' exact element={<Grafena />} />
 
   {/* <Switch>
      <Navbar isAuth={loggedIn} />
