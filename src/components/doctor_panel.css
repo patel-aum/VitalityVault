@@ -70,3 +70,13 @@ img {
 .pagination button.active {
   background-color: #0F4C81;
 }
+
+.btn{
+  background-color: #0077c9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

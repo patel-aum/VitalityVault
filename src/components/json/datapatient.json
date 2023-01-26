@@ -1,15 +1,18 @@
 {
-    "roomNumber": 12,
+    "roomNumber": 100,
     "patientInfo": {
-        "id": 123,
+        "email-id": "mukesh123@gmail.com",
         "photo": "https://randomuser.me/api/portraits/men/56.jpg",
-        "name": "John Smith",
+        "name": "Mukesh",
         "age": 34,
         "weight": 150,
         "doctor": "Dr. YK Mishra",
         "healthIssue": "Chest pain and shortness of breath",
-        "oxygenLevelLastUpdated": "2022-12-01 T12:00:00",
-        "bloodPressureLastUpdated": "2022-12-01 T15:00:00",
-        "temperatureLastUpdated": "2022-12-01 T18:00:00"
+        "Lastoxygenlevel":"80",
+        "Lastbloodpressurelevel":"120/80 ",
+        "Lasttemraturelevel":"65",
+        "oxygenLevelLastUpdated": "2022-12-01  12:00:00 ",
+        "bloodPressureLastUpdated": "2022-12-01  15:00:00 ",
+        "temperatureLastUpdated": "2022-12-01 18:00:00 "
     }
 }

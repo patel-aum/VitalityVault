@@ -39,3 +39,13 @@
 .patient-panel__info-value {
   font-weight: normal;
 }
+.lastupdated{
+text-align: right;
+letter-spacing: 1px;
+padding-left: 20px;
+
+}
+.patient-panel__text {
+  display: flex;
+  align-items: center;
+}

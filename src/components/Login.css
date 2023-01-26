@@ -25,7 +25,7 @@ body {
 }
 
 .Login input {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -59,7 +59,6 @@ body {
 }
 
 .Login input#username {
-  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;

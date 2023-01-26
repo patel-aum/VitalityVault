@@ -9,7 +9,6 @@ const Login = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // validate input
     if (!username || !password) {
       setError('Please enter a username and password');
       return;
