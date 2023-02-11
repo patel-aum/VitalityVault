@@ -8,11 +8,11 @@ import Monitoringpanel from "./components/Monitoringpanel";
 import Login from './components/Loginpage';
 import data from "./components/json/datapatient.json"
 import Grafena from './components/grafena';
-// import NavBarUser from './components/navbar';
+import Navbar from './components/navbar';
 function App(){
   return (
    <React.Fragment>
-    <h1>VitalityVault</h1>
+   <Navbar/>
       <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
       <Router>
       <Routes>
