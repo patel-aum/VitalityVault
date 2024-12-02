@@ -10,7 +10,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.21.1",
     "mongoose": "^6.9.0",
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.22",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
